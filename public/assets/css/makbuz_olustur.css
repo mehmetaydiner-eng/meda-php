@@ -1,0 +1,327 @@
+    .makbuz-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .makbuz-header {
+        background: #0d0d0d;
+        padding: 20px 30px;
+        border-bottom: 2px solid #2a2a2a;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .makbuz-header .makbuz-bilgi {
+        font-size: 12px;
+        color: #8a8a8a;
+        line-height: 1.8;
+    }
+    
+    .makbuz-header .makbuz-bilgi .makbuz-no {
+        font-size: 20px;
+        font-weight: 700;
+        color: #4ad46a;
+    }
+    
+    .makbuz-body {
+        padding: 20px 25px;
+        background: #1a1a1a;
+    }
+    
+    .urun-ekle-row {
+        background: #121212;
+        border: 1px solid #2a2a2a;
+        border-radius: 6px;
+        padding: 12px 15px;
+        margin-bottom: 15px;
+    }
+    
+    .urun-ekle-row .form-label {
+        color: #8a8a8a;
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        margin-bottom: 2px;
+    }
+    
+    .urun-ekle-row .form-control,
+    .urun-ekle-row .form-select {
+        background: #121212 !important;
+        border: 1px solid #2a2a2a !important;
+        color: #e0e0e0 !important;
+        border-radius: 4px !important;
+        padding: 5px 10px !important;
+        font-size: 12px !important;
+        height: 32px;
+    }
+    
+    .btn-makbuz-kaydet {
+        background: #1a3a1a !important;
+        color: #8ad4a0 !important;
+        border: 1px solid #2a5a2a !important;
+        padding: 10px 24px;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 600;
+        transition: all 0.2s;
+        cursor: pointer;
+    }
+    
+    .btn-makbuz-kaydet:hover {
+        background: #2a4a2a !important;
+        color: #ffffff !important;
+    }
+    
+    .btn-makbuz-urun-ekle {
+        background: #1a2a4a !important;
+        color: #4a8ae8 !important;
+        border: 1px solid #2a4a6a !important;
+        padding: 5px 16px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        transition: all 0.2s;
+        cursor: pointer;
+        height: 32px;
+    }
+    
+    .btn-makbuz-urun-ekle:hover {
+        background: #2a4a6a !important;
+        color: #ffffff !important;
+    }
+    
+    .btn-makbuz-urun-sil {
+        background: #3a1a1a !important;
+        color: #d48a8a !important;
+        border: 1px solid #5a2a2a !important;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-size: 11px;
+        transition: all 0.2s;
+        cursor: pointer;
+    }
+    
+    .btn-makbuz-urun-sil:hover {
+        background: #4a2a2a !important;
+        color: #ffffff !important;
+    }
+    
+    /* ===== YENİ ÜRÜN EKLE BUTONU ===== */
+    .btn-yeni-urun-makbuz {
+        background: #3a2a0d !important;
+        color: #e8a84a !important;
+        border: 1px solid #5a3a1a !important;
+        padding: 5px 16px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        transition: all 0.2s;
+        cursor: pointer;
+        height: 32px;
+        white-space: nowrap;
+    }
+    
+    .btn-yeni-urun-makbuz:hover {
+        background: #4a3a1a !important;
+        color: #f0c84a !important;
+    }
+    
+    .makbuz-table {
+        width: 100%;
+        font-size: 12px;
+        border-collapse: collapse;
+    }
+    
+    .makbuz-table thead th {
+        background: #0d0d0d;
+        padding: 6px 10px;
+        text-align: left;
+        color: #a0a0a0;
+        font-weight: 600;
+        border: 1px solid #2a2a2a;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        white-space: nowrap;
+    }
+    
+    .makbuz-table tbody td {
+        padding: 6px 10px;
+        border: 1px solid #2a2a2a;
+        color: #d0d0d0;
+        font-size: 12px;
+        vertical-align: middle;
+    }
+    
+    .makbuz-table tbody tr:hover {
+        background: #222222;
+    }
+    
+    .makbuz-table .text-end {
+        text-align: right;
+    }
+    
+    .makbuz-table .text-center {
+        text-align: center;
+    }
+    
+    .makbuz-table td input,
+    .makbuz-table td select {
+        background: #121212 !important;
+        border: 1px solid #2a2a2a !important;
+        color: #e0e0e0 !important;
+        border-radius: 4px !important;
+        padding: 2px 6px !important;
+        font-size: 12px !important;
+        width: 100%;
+        min-width: 50px;
+    }
+    
+    .makbuz-table td input.miktar-input { max-width: 70px; text-align: center; }
+    .makbuz-table td input.fiyat-input { max-width: 100px; text-align: right; }
+    .makbuz-table td input.iskonto-input { max-width: 60px; text-align: center; }
+    
+    .makbuz-toplam {
+        background: #121212;
+        border: 1px solid #2a2a2a;
+        border-radius: 6px;
+        padding: 12px 20px;
+        min-width: 250px;
+    }
+    
+    .makbuz-toplam .total-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 3px 0;
+        font-size: 13px;
+    }
+    
+    .makbuz-toplam .total-row .label {
+        color: #8a8a8a;
+    }
+    
+    .makbuz-toplam .total-row .value {
+        color: #d0d0d0;
+        font-weight: 500;
+    }
+    
+    .makbuz-toplam .total-row.genel-toplam {
+        border-top: 2px solid #2a2a2a;
+        padding-top: 8px;
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    .makbuz-toplam .total-row.genel-toplam .value {
+        color: #4ad46a;
+    }
+    
+    /* ===== MODAL STİLLERİ ===== */
+    .modal-content {
+        background: #1e1e1e !important;
+        color: #e0e0e0 !important;
+        border: 1px solid #2a2a2a !important;
+    }
+    
+    .modal-header {
+        border-bottom: 1px solid #2a2a2a !important;
+    }
+    
+    .modal-footer {
+        border-top: 1px solid #2a2a2a !important;
+    }
+    
+    .modal .btn-close {
+        filter: invert(1);
+    }
+    
+    .modal .form-control,
+    .modal .form-select {
+        background: #121212 !important;
+        border: 1px solid #2a2a2a !important;
+        color: #e0e0e0 !important;
+        font-size: 12px !important;
+    }
+    
+    .modal .form-label {
+        font-size: 10px !important;
+        color: #8a8a8a;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+    }
+    
+    .modal .btn-urun-kaydet {
+        background: #1a3a1a !important;
+        color: #8ad4a0 !important;
+        border: 1px solid #2a5a2a !important;
+        padding: 8px 24px;
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: 600;
+        transition: all 0.2s;
+        cursor: pointer;
+    }
+    
+    .modal .btn-urun-kaydet:hover {
+        background: #2a4a2a !important;
+        color: #ffffff !important;
+    }
+    
+    .modal .btn-iptal {
+        background: #2a2a2a !important;
+        color: #8a8a8a !important;
+        border: 1px solid #3a3a3a !important;
+        padding: 8px 24px;
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: 600;
+        transition: all 0.2s;
+        cursor: pointer;
+    }
+    
+    .modal .btn-iptal:hover {
+        background: #3a3a3a !important;
+        color: #ffffff !important;
+    }
+    
+    .modal .input-group .btn {
+        height: 38px;
+    }
+    
+    @media (max-width: 768px) {
+        .makbuz-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .makbuz-body {
+            padding: 12px;
+        }
+        .makbuz-table {
+            font-size: 10px;
+        }
+        .makbuz-table thead th,
+        .makbuz-table tbody td {
+            padding: 4px 6px;
+        }
+        .urun-ekle-row .row {
+            flex-direction: column;
+            gap: 8px;
+        }
+        .urun-ekle-row .col-md-3,
+        .urun-ekle-row .col-md-2,
+        .urun-ekle-row .col-md-1 {
+            width: 100%;
+        }
+        .urun-ekle-row .btn {
+            width: 100% !important;
+        }
+        .makbuz-header .makbuz-bilgi.text-end {
+            text-align: left !important;
+            width: 100%;
+        }
+    }

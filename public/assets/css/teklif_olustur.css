@@ -1,0 +1,372 @@
+.teklif-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    overflow: hidden;
+    color: #e0e0e0;
+    border: 1px solid #2a2a2a;
+    font-size: 13px;
+}
+
+.teklif-header {
+    background: #0d0d0d;
+    padding: 20px 30px;
+    border-bottom: 2px solid #2a2a2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.teklif-header .satici-bilgi {
+    font-size: 12px;
+    color: #8a8a8a;
+    line-height: 1.6;
+    flex: 1;
+    min-width: 280px;
+}
+
+.teklif-header .satici-bilgi strong {
+    color: #e0e0e0;
+    font-size: 14px;
+    display: block;
+}
+
+.teklif-header .satici-bilgi input,
+.teklif-header .satici-bilgi textarea {
+    background: #121212 !important;
+    border: 1px solid #2a2a2a !important;
+    color: #e0e0e0 !important;
+    border-radius: 4px !important;
+    padding: 3px 8px !important;
+    font-size: 12px !important;
+    width: 100%;
+    margin-top: 2px;
+}
+
+.teklif-header .teklif-bilgi {
+    text-align: right;
+    font-size: 12px;
+    color: #8a8a8a;
+    line-height: 2;
+    flex: 1;
+    min-width: 250px;
+}
+
+.teklif-header .teklif-bilgi .teklif-no-input {
+    font-size: 16px;
+    font-weight: 700;
+    color: #4ad46a;
+    background: #121212;
+    border: 1px solid #2a2a2a;
+    border-radius: 4px;
+    padding: 3px 10px;
+    width: 200px;
+    text-align: right;
+}
+
+.teklif-header .teklif-bilgi .teklif-no-input:focus {
+    border-color: #4a4a4a;
+    outline: none;
+}
+
+.teklif-header .teklif-bilgi .etiket {
+    color: #6a6a6a;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    width: 120px;
+}
+
+.teklif-header .teklif-bilgi select,
+.teklif-header .teklif-bilgi input[type="date"] {
+    background: #121212 !important;
+    border: 1px solid #2a2a2a !important;
+    color: #e0e0e0 !important;
+    border-radius: 4px !important;
+    padding: 2px 8px !important;
+    font-size: 12px !important;
+}
+
+.teklif-body {
+    padding: 20px 25px;
+    background: #1a1a1a;
+}
+
+.alici-bilgi {
+    background: #121212;
+    border: 1px solid #2a2a2a;
+    border-radius: 6px;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.alici-bilgi .alici-unvan {
+    font-weight: 700;
+    color: #e0e0e0;
+    font-size: 14px;
+}
+
+.alici-bilgi .alici-unvan input {
+    background: #121212 !important;
+    border: 1px solid #2a2a2a !important;
+    color: #e0e0e0 !important;
+    border-radius: 4px !important;
+    padding: 3px 10px !important;
+    font-size: 14px !important;
+    width: 100%;
+    max-width: 400px;
+    font-weight: 700;
+}
+
+.alici-bilgi .alici-detay input {
+    background: #121212 !important;
+    border: 1px solid #2a2a2a !important;
+    color: #e0e0e0 !important;
+    border-radius: 4px !important;
+    padding: 2px 8px !important;
+    font-size: 12px !important;
+    width: 180px;
+    margin: 2px 0;
+}
+
+.teklif-bilgi-satiri {
+    background: #121212;
+    border: 1px solid #2a2a2a;
+    border-radius: 6px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 25px;
+    font-size: 12px;
+    color: #8a8a8a;
+}
+
+.teklif-bilgi-satiri .bilgi-item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.teklif-bilgi-satiri .bilgi-item .label {
+    color: #6a6a6a;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.teklif-bilgi-satiri .bilgi-item .value {
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+.teklif-bilgi-satiri .bilgi-item input,
+.teklif-bilgi-satiri .bilgi-item select {
+    background: #121212 !important;
+    border: 1px solid #2a2a2a !important;
+    color: #e0e0e0 !important;
+    border-radius: 4px !important;
+    padding: 2px 8px !important;
+    font-size: 12px !important;
+}
+
+.teklif-table {
+    width: 100%;
+    font-size: 12px;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.teklif-table thead th {
+    background: #0d0d0d;
+    padding: 8px 10px;
+    text-align: left;
+    color: #a0a0a0;
+    font-weight: 600;
+    border: 1px solid #2a2a2a;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+
+.teklif-table thead th.text-end { text-align: right; }
+.teklif-table thead th.text-center { text-align: center; }
+
+.teklif-table tbody td {
+    padding: 6px 8px;
+    border: 1px solid #2a2a2a;
+    color: #d0d0d0;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.teklif-table tbody tr:hover { background: #222222; }
+
+.teklif-table .text-end { text-align: right; }
+.teklif-table .text-center { text-align: center; }
+
+.teklif-table td input,
+.teklif-table td select {
+    background: #121212 !important;
+    border: 1px solid #2a2a2a !important;
+    color: #e0e0e0 !important;
+    border-radius: 4px !important;
+    padding: 2px 6px !important;
+    font-size: 12px !important;
+    width: 100%;
+    min-width: 50px;
+}
+
+.teklif-table td input.kdv-input { max-width: 60px; }
+.teklif-table td input.iskonto-input { max-width: 60px; }
+.teklif-table td input.miktar-input { max-width: 70px; }
+.teklif-table td input.fiyat-input { max-width: 100px; text-align: right; }
+
+.toplam-bolumu {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.toplam-kutusu {
+    background: #121212;
+    border: 1px solid #2a2a2a;
+    border-radius: 6px;
+    padding: 12px 20px;
+    min-width: 300px;
+    font-size: 13px;
+}
+
+.toplam-kutusu .total-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 0;
+}
+
+.toplam-kutusu .total-row .label { color: #8a8a8a; }
+.toplam-kutusu .total-row .value { color: #d0d0d0; font-weight: 500; }
+.toplam-kutusu .total-row.genel-toplam {
+    border-top: 2px solid #2a2a2a;
+    padding-top: 8px;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.toplam-kutusu .total-row.genel-toplam .value { color: #4ad46a; }
+
+.teklif-btn {
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.teklif-btn-primary { background: #2a2a2a; color: #d0d0d0; border: 1px solid #3a3a3a; }
+.teklif-btn-primary:hover { background: #3a3a3a; color: #ffffff; }
+.teklif-btn-success { background: #1a2a1a; color: #8ad4a0; border: 1px solid #2a4a2a; }
+.teklif-btn-success:hover { background: #2a3a2a; color: #ffffff; }
+.teklif-btn-danger { background: #2a1a1a; color: #d48a8a; border: 1px solid #3a2a2a; }
+.teklif-btn-danger:hover { background: #3a1a1a; color: #ffffff; }
+.teklif-btn-warning { background: #2a2a1a; color: #d4c84a; border: 1px solid #3a3a2a; }
+.teklif-btn-warning:hover { background: #3a3a1a; color: #ffffff; }
+.teklif-btn-secondary { background: #2a2a2a; color: #8a8a8a; border: 1px solid #3a3a3a; }
+.teklif-btn-secondary:hover { background: #3a3a3a; color: #ffffff; }
+.teklif-btn-sm { padding: 3px 8px; font-size: 11px; }
+
+.form-control, .form-select {
+    background: #121212 !important;
+    border: 1px solid #2a2a2a !important;
+    color: #e0e0e0 !important;
+    border-radius: 4px !important;
+    padding: 5px 10px !important;
+    font-size: 12px !important;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #4a4a4a !important;
+    box-shadow: 0 0 0 0.15rem rgba(74, 74, 74, 0.2) !important;
+}
+
+.form-label {
+    color: #8a8a8a;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-bottom: 2px;
+}
+
+.urun-ekle-formu .form-control-sm {
+    font-size: 11px !important;
+    padding: 4px 8px !important;
+}
+
+/* Modal Stilleri */
+.modal-content {
+    background: #1e1e1e !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #2a2a2a !important;
+}
+.modal-header {
+    border-bottom: 1px solid #2a2a2a !important;
+}
+.modal-footer {
+    border-top: 1px solid #2a2a2a !important;
+}
+.modal .btn-close {
+    filter: invert(1);
+}
+
+@media (max-width: 768px) {
+    .teklif-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .teklif-header .teklif-bilgi { text-align: left; width: 100%; }
+    .teklif-body { padding: 12px; }
+    .teklif-table { font-size: 10px; }
+    .teklif-table thead th, .teklif-table tbody td { padding: 4px 5px; }
+    .toplam-kutusu { min-width: 200px; }
+    .teklif-bilgi-satiri { gap: 8px; }
+    .teklif-header .teklif-bilgi .teklif-no-input { width: 100%; }
+}
+
+@media print {
+    .top-navbar, .page-header, .no-print, .btn, .teklif-btn, .urun-ekle-formu, .modal {
+        display: none !important;
+    }
+    .main-content { padding: 0 !important; margin: 0 !important; background: white !important; }
+    .teklif-container { border: none !important; border-radius: 0 !important; background: white !important; box-shadow: none !important; color: #212529 !important; font-size: 12px !important; }
+    .teklif-header { background: #f8f9fa !important; border-bottom: 2px solid #dee2e6 !important; }
+    .teklif-header .satici-bilgi strong { color: #212529 !important; }
+    .teklif-header .teklif-bilgi .teklif-no-input { color: #1a5276 !important; background: #f8f9fa !important; }
+    .teklif-body { background: white !important; padding: 15px !important; }
+    .alici-bilgi { background: #f8f9fa !important; border: 1px solid #dee2e6 !important; }
+    .alici-bilgi .alici-unvan { color: #212529 !important; }
+    .alici-bilgi .alici-detay { color: #6c757d !important; }
+    .teklif-bilgi-satiri { background: #f8f9fa !important; border: 1px solid #dee2e6 !important; }
+    .teklif-bilgi-satiri .bilgi-item .value { color: #212529 !important; }
+    .teklif-table thead th { background: #e9ecef !important; color: #212529 !important; border: 1px solid #dee2e6 !important; }
+    .teklif-table tbody td { color: #212529 !important; border: 1px solid #dee2e6 !important; }
+    .teklif-table tbody tr:hover { background: transparent !important; }
+    .toplam-kutusu { background: #f8f9fa !important; border: 1px solid #dee2e6 !important; }
+    .toplam-kutusu .total-row .value { color: #212529 !important; }
+    .toplam-kutusu .total-row.genel-toplam .value { color: #28a745 !important; }
+    .text-muted { color: #6c757d !important; }
+    .teklif-table td input, .teklif-table td select {
+        background: #f8f9fa !important;
+        border: 1px solid #dee2e6 !important;
+        color: #212529 !important;
+    }
+}

@@ -1,0 +1,593 @@
+    .kasa-container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    /* ===== TEMA DEĞİŞKENLERİYLE UYUMLU ===== */
+    .kasa-ozet-kart {
+        background: var(--bg-card, #1a1a1a);
+        border: 1px solid var(--border-color, #2a2a2a);
+        border-radius: 8px;
+        padding: 15px 20px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .kasa-ozet-kart:hover {
+        border-color: var(--border-light, #4a4a4a);
+        background: var(--bg-hover, #222222);
+    }
+
+    .kasa-ozet-kart .ozet-label {
+        font-size: 11px;
+        color: var(--text-secondary, #8a8a8a);
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+    .kasa-ozet-kart .ozet-deger {
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 5px;
+        transition: color 0.3s ease;
+    }
+
+    .kasa-ozet-kart .ozet-deger.positive { color: var(--badge-success-text, #4ad46a); }
+    .kasa-ozet-kart .ozet-deger.negative { color: var(--badge-danger-text, #d44a4a); }
+    .kasa-ozet-kart .ozet-deger.neutral { color: var(--badge-info-text, #4ac8d4); }
+
+    .card-custom {
+        background: var(--bg-secondary, #1a1a1a);
+        border: 1px solid var(--border-color, #2a2a2a);
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        transition: background 0.3s ease, border-color 0.3s ease;
+    }
+
+    .card-header-custom {
+        background: var(--bg-header, #0d0d0d);
+        padding: 6px 15px;
+        border-bottom: 1px solid var(--border-color, #2a2a2a);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4px;
+        transition: background 0.3s ease, border-color 0.3s ease;
+    }
+
+    .card-header-custom h5 {
+        margin: 0;
+        color: var(--text-primary, #e0e0e0);
+        font-size: 13px;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+    .card-header-custom h5 i {
+        color: var(--text-muted, #6a6a6a);
+        margin-right: 6px;
+        transition: color 0.3s ease;
+    }
+
+    .kasa-islem-btn {
+        background: var(--badge-info-bg, #1a2a4a) !important;
+        color: var(--badge-info-text, #4a8ae8) !important;
+        border: 1px solid var(--border-color, #2a4a6a) !important;
+        padding: 8px 20px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        transition: all 0.2s;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .kasa-islem-btn:hover {
+        background: var(--border-color, #2a4a6a) !important;
+        color: var(--text-primary, #ffffff) !important;
+    }
+
+    .kasa-islem-btn.success {
+        background: var(--badge-success-bg, #1a3a1a) !important;
+        color: var(--badge-success-text, #8ad4a0) !important;
+        border-color: var(--border-color, #2a5a2a) !important;
+    }
+
+    .kasa-islem-btn.success:hover {
+        background: var(--border-color, #2a4a2a) !important;
+        color: var(--text-primary, #ffffff) !important;
+    }
+
+    .kasa-islem-btn.danger {
+        background: var(--badge-danger-bg, #3a1a1a) !important;
+        color: var(--badge-danger-text, #d48a8a) !important;
+        border-color: var(--border-color, #5a2a2a) !important;
+    }
+
+    .kasa-islem-btn.danger:hover {
+        background: var(--border-color, #4a2a2a) !important;
+        color: var(--text-primary, #ffffff) !important;
+    }
+
+    .kasa-islem-btn.warning {
+        background: var(--badge-warning-bg, #3a2a0d) !important;
+        color: var(--badge-warning-text, #d4c84a) !important;
+        border-color: var(--border-color, #5a3a1a) !important;
+    }
+
+    .kasa-islem-btn.warning:hover {
+        background: var(--border-color, #4a3a1a) !important;
+        color: var(--text-primary, #ffffff) !important;
+    }
+
+    .kasa-hareket-tablosu {
+        width: 100%;
+        font-size: 12px;
+        border-collapse: collapse;
+    }
+
+    .kasa-hareket-tablosu thead th {
+        background: var(--bg-header, #0d0d0d);
+        padding: 8px 10px;
+        text-align: left;
+        color: var(--text-secondary, #a0a0a0);
+        font-weight: 600;
+        border: 1px solid var(--border-color, #2a2a2a);
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        white-space: nowrap;
+        transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .kasa-hareket-tablosu tbody td {
+        padding: 8px 10px;
+        border: 1px solid var(--border-color, #2a2a2a);
+        color: var(--text-primary, #d0d0d0);
+        font-size: 12px;
+        vertical-align: middle;
+        transition: color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .kasa-hareket-tablosu tbody tr:hover {
+        background: var(--bg-hover, #222222);
+    }
+
+    .kasa-hareket-tablosu .text-end {
+        text-align: right;
+    }
+
+    .kasa-hareket-tablosu .text-center {
+        text-align: center;
+    }
+
+    .kasa-hareket-tablosu .positive {
+        color: var(--badge-success-text, #4ad46a);
+    }
+
+    .kasa-hareket-tablosu .negative {
+        color: var(--badge-danger-text, #d44a4a);
+    }
+
+    .kasa-hareket-tablosu .badge-tur {
+        display: inline-block;
+        padding: 3px 12px;
+        border-radius: 20px;
+        font-size: 10px;
+        font-weight: 600;
+        color: var(--text-primary, #e0e0e0);
+        white-space: nowrap;
+        transition: all 0.3s ease;
+    }
+
+    .badge-tur.giris { background: var(--badge-success-bg, #1a3a1a); color: var(--badge-success-text, #4ad46a); }
+    .badge-tur.cikis { background: var(--badge-danger-bg, #3a1a1a); color: var(--badge-danger-text, #d44a4a); }
+    .badge-tur.tahsilat { background: var(--badge-info-bg, #1a2a3a); color: var(--badge-info-text, #4ac8d4); }
+    .badge-tur.odeme { background: var(--badge-warning-bg, #3a2a0d); color: var(--badge-warning-text, #d4c84a); }
+    .badge-tur.komisyon { background: var(--badge-purple-bg, #2a1a3a); color: var(--badge-purple-text, #c84ad4); }
+    .badge-tur.virman { background: var(--badge-info-bg, #1a2a4a); color: var(--badge-info-text, #4a8ae8); }
+
+    .btn-success-custom {
+        background: var(--badge-success-bg, #1a3a1a) !important;
+        color: var(--badge-success-text, #8ad4a0) !important;
+        border: 1px solid var(--border-color, #2a5a2a) !important;
+        padding: 6px 16px;
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: 600;
+        transition: all 0.2s;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .btn-success-custom:hover {
+        background: var(--border-color, #2a4a2a) !important;
+        color: var(--text-primary, #ffffff) !important;
+    }
+
+    .btn-outline-primary {
+        background: transparent !important;
+        color: var(--text-secondary, #8a8a8a) !important;
+        border: 1px solid var(--border-color, #3a3a3a) !important;
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        transition: all 0.2s;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .btn-outline-primary:hover {
+        background: var(--bg-hover, #2a2a2a) !important;
+        color: var(--text-primary, #ffffff) !important;
+    }
+
+    .btn-outline-success {
+        background: transparent !important;
+        color: var(--badge-success-text, #4ad46a) !important;
+        border: 1px solid var(--border-color, #1a4a1a) !important;
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        transition: all 0.2s;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .btn-outline-success:hover {
+        background: var(--badge-success-bg, #1a3a1a) !important;
+        color: var(--text-primary, #ffffff) !important;
+    }
+
+    .btn-outline-danger {
+        background: transparent !important;
+        color: var(--badge-danger-text, #d44a4a) !important;
+        border: 1px solid var(--border-color, #4a1a1a) !important;
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        transition: all 0.2s;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .btn-outline-danger:hover {
+        background: var(--badge-danger-bg, #3a1a1a) !important;
+        color: var(--text-primary, #ffffff) !important;
+    }
+
+    .btn-outline-info {
+        background: transparent !important;
+        color: var(--badge-info-text, #4ac8d4) !important;
+        border: 1px solid var(--border-color, #1a4a4a) !important;
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        transition: all 0.2s;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .btn-outline-info:hover {
+        background: var(--badge-info-bg, #1a3a3a) !important;
+        color: var(--text-primary, #ffffff) !important;
+    }
+
+    .btn-outline-primary {
+        background: transparent !important;
+        color: var(--text-secondary, #8a8a8a) !important;
+        border: 1px solid var(--border-color, #3a3a3a) !important;
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        transition: all 0.2s;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .btn-outline-primary:hover {
+        background: var(--bg-hover, #2a2a2a) !important;
+        color: var(--text-primary, #ffffff) !important;
+    }
+
+    .btn-sm {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+
+    .btn-group .btn {
+        margin: 0 2px;
+    }
+
+    .form-label {
+        color: var(--text-secondary, #8a8a8a);
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        margin-bottom: 3px;
+        transition: color 0.3s ease;
+    }
+
+    .form-control,
+    .form-select {
+        background: var(--bg-input, #121212) !important;
+        border: 1px solid var(--border-color, #2a2a2a) !important;
+        color: var(--text-primary, #e0e0e0) !important;
+        border-radius: 4px !important;
+        padding: 6px 12px !important;
+        font-size: 13px !important;
+        transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+        border-color: var(--border-light, #4a4a4a) !important;
+        box-shadow: 0 0 0 0.15rem rgba(74, 74, 74, 0.2) !important;
+    }
+
+    .modal-content {
+        background: var(--bg-secondary, #1e1e1e) !important;
+        color: var(--text-primary, #e0e0e0) !important;
+        border: 1px solid var(--border-color, #2a2a2a) !important;
+        border-radius: 8px !important;
+        transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .modal-header {
+        border-bottom: 1px solid var(--border-color, #2a2a2a) !important;
+        padding: 10px 20px;
+        transition: border-color 0.3s ease;
+    }
+
+    .modal-footer {
+        border-top: 1px solid var(--border-color, #2a2a2a) !important;
+        padding: 10px 20px;
+        transition: border-color 0.3s ease;
+    }
+
+    .modal .btn-close {
+        filter: invert(1);
+        opacity: 0.8;
+    }
+
+    .modal .btn-close:hover {
+        opacity: 1;
+    }
+
+    .modal-body {
+        padding: 15px 20px;
+    }
+
+    .modal-backdrop {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .btn-secondary {
+        background: var(--bg-input, #2a2a2a) !important;
+        color: var(--text-secondary, #8a8a8a) !important;
+        border: 1px solid var(--border-color, #3a3a3a) !important;
+        padding: 6px 16px;
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: 600;
+        transition: all 0.2s;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .btn-secondary:hover {
+        background: var(--bg-hover, #3a3a3a) !important;
+        color: var(--text-primary, #ffffff) !important;
+    }
+
+    .btn-success {
+        background: var(--badge-success-bg, #1a3a1a) !important;
+        color: var(--badge-success-text, #8ad4a0) !important;
+        border: 1px solid var(--border-color, #2a5a2a) !important;
+        padding: 6px 16px;
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: 600;
+        transition: all 0.2s;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .btn-success:hover {
+        background: var(--border-color, #2a4a2a) !important;
+        color: var(--text-primary, #ffffff) !important;
+    }
+
+    code {
+        background: var(--bg-input, #0d0d0d);
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 11px;
+        color: var(--badge-success-text, #8ad4a0);
+        font-family: monospace;
+        transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .text-decoration-none {
+        text-decoration: none !important;
+        color: var(--text-primary, #d0d0d0);
+        transition: color 0.3s ease;
+    }
+
+    .text-decoration-none:hover {
+        color: var(--badge-info-text, #4ac8d4);
+    }
+
+    .text-muted {
+        color: var(--text-muted, #6a6a6a) !important;
+    }
+
+    /* ===== LIGHT TEMA ÖZEL DÜZELTMELER ===== */
+    [data-theme="light"] .kasa-ozet-kart {
+        background: #ffffff;
+        border-color: #dee2e6;
+    }
+
+    [data-theme="light"] .kasa-ozet-kart:hover {
+        background: #f8f9fa;
+    }
+
+    [data-theme="light"] .kasa-ozet-kart .ozet-deger.positive { color: #28a745; }
+    [data-theme="light"] .kasa-ozet-kart .ozet-deger.negative { color: #dc3545; }
+    [data-theme="light"] .kasa-ozet-kart .ozet-deger.neutral { color: #17a2b8; }
+
+    [data-theme="light"] .kasa-hareket-tablosu thead th {
+        background: #e9ecef;
+        color: #495057;
+        border-color: #dee2e6;
+    }
+
+    [data-theme="light"] .kasa-hareket-tablosu tbody td {
+        color: #212529;
+        border-color: #dee2e6;
+    }
+
+    [data-theme="light"] .badge-tur.giris { background: #d4edda; color: #155724; }
+    [data-theme="light"] .badge-tur.cikis { background: #f8d7da; color: #721c24; }
+    [data-theme="light"] .badge-tur.tahsilat { background: #d1ecf1; color: #0c5460; }
+    [data-theme="light"] .badge-tur.odeme { background: #fff3cd; color: #856404; }
+    [data-theme="light"] .badge-tur.komisyon { background: #e8d5f5; color: #6c3483; }
+    [data-theme="light"] .badge-tur.virman { background: #d1ecf1; color: #0c5460; }
+
+    [data-theme="light"] .modal-content {
+        background: #ffffff !important;
+        color: #212529 !important;
+        border-color: #dee2e6 !important;
+    }
+
+    [data-theme="light"] .modal-header {
+        border-color: #dee2e6 !important;
+    }
+
+    [data-theme="light"] .modal-footer {
+        border-color: #dee2e6 !important;
+    }
+
+    /* ===== GRAY TEMA ÖZEL DÜZELTMELER ===== */
+    [data-theme="gray"] .kasa-ozet-kart {
+        background: #383838;
+        border-color: #4a4a4a;
+    }
+
+    [data-theme="gray"] .kasa-ozet-kart:hover {
+        background: #444444;
+    }
+
+    [data-theme="gray"] .kasa-ozet-kart .ozet-deger.positive { color: #7ad49a; }
+    [data-theme="gray"] .kasa-ozet-kart .ozet-deger.negative { color: #d47a7a; }
+    [data-theme="gray"] .kasa-ozet-kart .ozet-deger.neutral { color: #5a9ad4; }
+
+    [data-theme="gray"] .kasa-hareket-tablosu thead th {
+        background: #2a2a2a;
+        color: #b0b0b0;
+        border-color: #4a4a4a;
+    }
+
+    [data-theme="gray"] .kasa-hareket-tablosu tbody td {
+        color: #e8e8e8;
+        border-color: #4a4a4a;
+    }
+
+    [data-theme="gray"] .badge-tur.giris { background: #1a3a2a; color: #7ad49a; }
+    [data-theme="gray"] .badge-tur.cikis { background: #3a1a1a; color: #d47a7a; }
+    [data-theme="gray"] .badge-tur.tahsilat { background: #1a2a3a; color: #5a9ad4; }
+    [data-theme="gray"] .badge-tur.odeme { background: #3a3a1a; color: #d4c85a; }
+    [data-theme="gray"] .badge-tur.komisyon { background: #2a1a3a; color: #b07ad4; }
+    [data-theme="gray"] .badge-tur.virman { background: #1a2a3a; color: #5a9ad4; }
+
+    [data-theme="gray"] .modal-content {
+        background: #383838 !important;
+        color: #e8e8e8 !important;
+        border-color: #4a4a4a !important;
+    }
+
+    [data-theme="gray"] .modal-header {
+        border-color: #4a4a4a !important;
+    }
+
+    [data-theme="gray"] .modal-footer {
+        border-color: #4a4a4a !important;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+        .kasa-ozet-kart .ozet-deger {
+            font-size: 18px;
+        }
+        .kasa-hareket-tablosu {
+            font-size: 10px;
+        }
+        .kasa-hareket-tablosu thead th,
+        .kasa-hareket-tablosu tbody td {
+            padding: 4px 6px;
+        }
+        .kasa-islem-btn {
+            font-size: 11px;
+            padding: 6px 14px;
+        }
+        .card-header-custom {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+        }
+        .btn-group {
+            flex-wrap: wrap;
+        }
+        .btn-group .btn {
+            margin: 2px;
+        }
+    }
+
+    @media print {
+        .top-navbar, .page-header, .no-print, .btn, .kasa-islem-btn {
+            display: none !important;
+        }
+        .main-content {
+            padding: 0 !important;
+            margin: 0 !important;
+            background: white !important;
+        }
+        .kasa-container {
+            border: none !important;
+            border-radius: 0 !important;
+            background: white !important;
+            box-shadow: none !important;
+            color: #212529 !important;
+        }
+        .kasa-ozet-kart {
+            background: #f8f9fa !important;
+            border: 1px solid #dee2e6 !important;
+        }
+        .kasa-hareket-tablosu thead th {
+            background: #e9ecef !important;
+            color: #212529 !important;
+            border: 1px solid #dee2e6 !important;
+        }
+        .kasa-hareket-tablosu tbody td {
+            color: #212529 !important;
+            border: 1px solid #dee2e6 !important;
+        }
+        .badge-tur.giris { background: #d4edda !important; color: #155724 !important; }
+        .badge-tur.cikis { background: #f8d7da !important; color: #721c24 !important; }
+        .badge-tur.tahsilat { background: #d1ecf1 !important; color: #0c5460 !important; }
+        .badge-tur.odeme { background: #fff3cd !important; color: #856404 !important; }
+        .badge-tur.komisyon { background: #e8d5f5 !important; color: #6c3483 !important; }
+        .badge-tur.virman { background: #d1ecf1 !important; color: #0c5460 !important; }
+    }

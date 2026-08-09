@@ -1,0 +1,326 @@
+    .efatura-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #1e1e1e;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        overflow: hidden;
+        color: #e0e0e0;
+        border: 1px solid #2a2a2a;
+    }
+    
+    .efatura-header {
+        background: #0d0d0d;
+        padding: 20px 30px;
+        border-bottom: 2px solid #2a2a2a;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .efatura-header .logo-area {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .efatura-header .logo-area .logo-icon {
+        font-size: 36px;
+        color: #4a90e2;
+    }
+    
+    .efatura-header .logo-area .firma-bilgi {
+        font-size: 12px;
+        color: #8a8a8a;
+        line-height: 1.6;
+    }
+    
+    .efatura-header .logo-area .firma-bilgi strong {
+        color: #e0e0e0;
+        font-size: 14px;
+    }
+    
+    .efatura-header .fatura-bilgi {
+        text-align: right;
+        font-size: 12px;
+        color: #8a8a8a;
+        line-height: 1.8;
+    }
+    
+    .efatura-header .fatura-bilgi .fatura-no {
+        font-size: 18px;
+        font-weight: 700;
+        color: #e0e0e0;
+    }
+    
+    .efatura-body {
+        padding: 25px 30px;
+        background: #1a1a1a;
+    }
+    
+    .efatura-info-box {
+        border: 1px solid #2a2a2a;
+        border-radius: 6px;
+        padding: 12px 15px;
+        margin-bottom: 15px;
+        background: #121212;
+    }
+    
+    .efatura-info-box .info-title {
+        font-size: 11px;
+        font-weight: 700;
+        color: #8a8a8a;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 6px;
+    }
+    
+    .efatura-info-box .info-content {
+        font-size: 13px;
+        color: #d0d0d0;
+        line-height: 1.8;
+    }
+    
+    .efatura-info-box .info-content .label {
+        color: #6a6a6a;
+        font-size: 11px;
+    }
+    
+    .efatura-table {
+        width: 100%;
+        font-size: 12px;
+        border-collapse: collapse;
+        margin: 10px 0;
+    }
+    
+    .efatura-table thead th {
+        background: #0d0d0d;
+        padding: 8px 10px;
+        text-align: left;
+        color: #a0a0a0;
+        font-weight: 600;
+        border: 1px solid #2a2a2a;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+    }
+    
+    .efatura-table tbody td {
+        padding: 8px 10px;
+        border: 1px solid #2a2a2a;
+        color: #d0d0d0;
+    }
+    
+    .efatura-table tbody tr:hover {
+        background: #222222;
+    }
+    
+    .efatura-table .text-end {
+        text-align: right;
+    }
+    
+    .efatura-table .text-center {
+        text-align: center;
+    }
+    
+    .efatura-total-box {
+        border: 1px solid #2a2a2a;
+        border-radius: 6px;
+        padding: 15px 20px;
+        background: #121212;
+        margin-top: 15px;
+    }
+    
+    .efatura-total-box .total-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 3px 0;
+        font-size: 13px;
+    }
+    
+    .efatura-total-box .total-row .label {
+        color: #8a8a8a;
+    }
+    
+    .efatura-total-box .total-row .value {
+        color: #d0d0d0;
+        font-weight: 500;
+    }
+    
+    .efatura-total-box .total-row.genel-toplam {
+        border-top: 2px solid #2a2a2a;
+        padding-top: 10px;
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    .efatura-total-box .total-row.genel-toplam .value {
+        color: #4ad46a;
+    }
+    
+    .efatura-btn {
+        padding: 6px 16px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+    }
+    
+    .efatura-btn-primary {
+        background: #2a2a2a;
+        color: #d0d0d0;
+        border: 1px solid #3a3a3a;
+    }
+    .efatura-btn-primary:hover {
+        background: #3a3a3a;
+        color: #ffffff;
+    }
+    
+    .efatura-btn-success {
+        background: #1a2a1a;
+        color: #8ad4a0;
+        border: 1px solid #2a4a2a;
+    }
+    .efatura-btn-success:hover {
+        background: #2a3a2a;
+        color: #ffffff;
+    }
+    
+    .efatura-btn-danger {
+        background: #2a1a1a;
+        color: #d48a8a;
+        border: 1px solid #3a2a2a;
+    }
+    .efatura-btn-danger:hover {
+        background: #3a1a1a;
+        color: #ffffff;
+    }
+    
+    .efatura-btn-warning {
+        background: #2a2a1a;
+        color: #d4c84a;
+        border: 1px solid #3a3a2a;
+    }
+    .efatura-btn-warning:hover {
+        background: #3a3a1a;
+        color: #ffffff;
+    }
+    
+    .efatura-btn-sm {
+        padding: 4px 10px;
+        font-size: 11px;
+    }
+    
+    .form-control,
+    .form-select {
+        background: #121212 !important;
+        border: 1px solid #2a2a2a !important;
+        color: #e0e0e0 !important;
+        border-radius: 4px !important;
+        padding: 6px 10px !important;
+        font-size: 13px !important;
+    }
+    
+    .form-control:focus,
+    .form-select:focus {
+        border-color: #4a4a4a !important;
+        box-shadow: 0 0 0 0.15rem rgba(74, 74, 74, 0.2) !important;
+    }
+    
+    .form-label {
+        color: #8a8a8a;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        margin-bottom: 3px;
+    }
+    
+    @media (max-width: 768px) {
+        .efatura-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .efatura-header .fatura-bilgi {
+            text-align: left;
+            width: 100%;
+        }
+        .efatura-body {
+            padding: 15px;
+        }
+        .efatura-table {
+            font-size: 10px;
+        }
+        .efatura-table thead th,
+        .efatura-table tbody td {
+            padding: 5px 6px;
+        }
+    }
+    
+    @media print {
+        .top-navbar, .page-header, .no-print, .btn, .efatura-btn {
+            display: none !important;
+        }
+        .main-content {
+            padding: 0 !important;
+            margin: 0 !important;
+            background: white !important;
+        }
+        .efatura-container {
+            border: none !important;
+            border-radius: 0 !important;
+            background: white !important;
+            box-shadow: none !important;
+            color: #212529 !important;
+        }
+        .efatura-header {
+            background: #f8f9fa !important;
+            border-bottom: 2px solid #dee2e6 !important;
+        }
+        .efatura-header .logo-area .firma-bilgi strong {
+            color: #212529 !important;
+        }
+        .efatura-header .fatura-bilgi .fatura-no {
+            color: #212529 !important;
+        }
+        .efatura-body {
+            background: white !important;
+            padding: 20px !important;
+        }
+        .efatura-info-box {
+            background: #f8f9fa !important;
+            border: 1px solid #dee2e6 !important;
+        }
+        .efatura-info-box .info-content {
+            color: #212529 !important;
+        }
+        .efatura-table thead th {
+            background: #e9ecef !important;
+            color: #212529 !important;
+            border: 1px solid #dee2e6 !important;
+        }
+        .efatura-table tbody td {
+            color: #212529 !important;
+            border: 1px solid #dee2e6 !important;
+        }
+        .efatura-total-box {
+            background: #f8f9fa !important;
+            border: 1px solid #dee2e6 !important;
+        }
+        .efatura-total-box .total-row .label {
+            color: #6c757d !important;
+        }
+        .efatura-total-box .total-row .value {
+            color: #212529 !important;
+        }
+        .efatura-total-box .total-row.genel-toplam .value {
+            color: #28a745 !important;
+        }
+        .text-muted { color: #6c757d !important; }
+    }

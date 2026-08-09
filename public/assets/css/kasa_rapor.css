@@ -1,0 +1,356 @@
+    .rapor-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .filtre-kutusu {
+        background: #121212;
+        border: 1px solid #2a2a2a;
+        border-radius: 8px;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+    }
+    
+    .filtre-kutusu .form-label {
+        color: #8a8a8a;
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        margin-bottom: 3px;
+    }
+    
+    .filtre-kutusu .form-control,
+    .filtre-kutusu .form-select {
+        background: #121212 !important;
+        border: 1px solid #2a2a2a !important;
+        color: #e0e0e0 !important;
+        border-radius: 4px !important;
+        padding: 6px 12px !important;
+        font-size: 13px !important;
+    }
+    
+    .filtre-kutusu .form-control:focus,
+    .filtre-kutusu .form-select:focus {
+        border-color: #4a4a4a !important;
+        box-shadow: 0 0 0 0.15rem rgba(74, 74, 74, 0.2) !important;
+    }
+    
+    .btn-rapor {
+        background: #1a2a4a !important;
+        color: #4a8ae8 !important;
+        border: 1px solid #2a4a6a !important;
+        padding: 8px 24px;
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: 600;
+        transition: all 0.2s;
+        cursor: pointer;
+    }
+    
+    .btn-rapor:hover {
+        background: #2a4a6a !important;
+        color: #ffffff !important;
+    }
+    
+    .btn-excel {
+        background: #1a3a1a !important;
+        color: #4ad46a !important;
+        border: 1px solid #2a5a2a !important;
+        padding: 6px 16px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        transition: all 0.2s;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    .btn-excel:hover {
+        background: #2a4a2a !important;
+        color: #ffffff !important;
+    }
+    
+    .btn-pdf {
+        background: #3a1a1a !important;
+        color: #d48a8a !important;
+        border: 1px solid #5a2a2a !important;
+        padding: 6px 16px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        transition: all 0.2s;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    .btn-pdf:hover {
+        background: #4a2a2a !important;
+        color: #ffffff !important;
+    }
+    
+    .ozet-kart {
+        background: #121212;
+        border: 1px solid #2a2a2a;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .ozet-kart .ozet-label {
+        color: #8a8a8a;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+    }
+    
+    .ozet-kart .ozet-deger {
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 5px;
+    }
+    
+    .ozet-kart .ozet-deger.text-success { color: #4ad46a; }
+    .ozet-kart .ozet-deger.text-danger { color: #d44a4a; }
+    .ozet-kart .ozet-deger.text-info { color: #4ac8d4; }
+    
+    /* Grafik Container */
+    .grafik-container {
+        background: #121212;
+        border: 1px solid #2a2a2a;
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 20px;
+        min-height: 300px;
+        position: relative;
+    }
+    
+    .grafik-container .grafik-bos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 250px;
+        color: #6a6a6a;
+        font-size: 14px;
+    }
+    
+    .grafik-barlar {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 250px;
+        gap: 20px;
+        padding: 10px 0;
+        overflow-x: auto;
+    }
+    
+    .grafik-bar-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 60px;
+    }
+    
+    .grafik-bar-item .bar-grup {
+        display: flex;
+        gap: 4px;
+        align-items: flex-end;
+        height: 200px;
+    }
+    
+    .grafik-bar-item .bar {
+        width: 20px;
+        border-radius: 3px 3px 0 0;
+        min-height: 4px;
+        transition: height 0.5s ease;
+        position: relative;
+    }
+    
+    .grafik-bar-item .bar-gelen {
+        background: linear-gradient(to top, #1a5a2a, #4ad46a);
+    }
+    
+    .grafik-bar-item .bar-giden {
+        background: linear-gradient(to top, #5a1a1a, #d44a4a);
+    }
+    
+    .grafik-bar-item .bar-label {
+        font-size: 10px;
+        color: #8a8a8a;
+        margin-top: 6px;
+        text-align: center;
+    }
+    
+    .grafik-bar-item .bar-deger {
+        font-size: 9px;
+        color: #6a6a6a;
+        text-align: center;
+        margin-top: 2px;
+    }
+    
+    .grafik-legend {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #2a2a2a;
+    }
+    
+    .grafik-legend .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        color: #c0c0c0;
+    }
+    
+    .grafik-legend .legend-color {
+        width: 16px;
+        height: 16px;
+        border-radius: 4px;
+    }
+    
+    .grafik-legend .legend-color.gelen { background: #4ad46a; }
+    .grafik-legend .legend-color.giden { background: #d44a4a; }
+    
+    @media (max-width: 768px) {
+        .grafik-barlar {
+            gap: 10px;
+        }
+        .grafik-bar-item {
+            min-width: 40px;
+        }
+        .grafik-bar-item .bar {
+            width: 14px;
+        }
+        .grafik-legend {
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+    }
+    
+    @media print {
+        .no-print { display: none !important; }
+        .grafik-container { border: 1px solid #dee2e6 !important; background: #f8f9fa !important; }
+        .ozet-kart { background: #f8f9fa !important; border: 1px solid #dee2e6 !important; }
+        .ozet-kart .ozet-deger.text-success { color: #28a745 !important; }
+        .ozet-kart .ozet-deger.text-danger { color: #dc3545 !important; }
+        .ozet-kart .ozet-deger.text-info { color: #17a2b8 !important; }
+    }
+    .card-custom {
+        background: #1a1a1a;
+        border: 1px solid #2a2a2a;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    .card-header-custom {
+        background: #0d0d0d;
+        padding: 12px 20px;
+        border-bottom: 1px solid #2a2a2a;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .card-header-custom h5 {
+        margin: 0;
+        color: #e0e0e0;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .card-header-custom h5 i {
+        color: #6a6a6a;
+        margin-right: 8px;
+    }
+    
+    .badge-status {
+        display: inline-block;
+        padding: 3px 12px;
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: 600;
+        color: #e0e0e0;
+        white-space: nowrap;
+    }
+    
+    .bg-success { background: #1a3a1a !important; color: #8ad4a0 !important; }
+    .bg-danger { background: #3a1a1a !important; color: #d48a8a !important; }
+    .bg-warning { background: #3a2a0d !important; color: #d4c84a !important; }
+    .bg-info { background: #0d2a3a !important; color: #4ac8d4 !important; }
+    .bg-secondary { background: #2a2a2a !important; color: #8a8a8a !important; }
+    
+    .text-success { color: #4ad46a !important; }
+    .text-danger { color: #d44a4a !important; }
+    .text-muted { color: #6a6a6a !important; }
+    .text-info { color: #4ac8d4 !important; }
+    
+    .table-custom {
+        width: 100%;
+        font-size: 12px;
+        border-collapse: collapse;
+    }
+    
+    .table-custom thead th {
+        background: #0d0d0d;
+        padding: 8px 10px;
+        text-align: left;
+        color: #a0a0a0;
+        font-weight: 600;
+        border: 1px solid #2a2a2a;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        white-space: nowrap;
+    }
+    
+    .table-custom tbody td {
+        padding: 8px 10px;
+        border: 1px solid #2a2a2a;
+        color: #d0d0d0;
+        font-size: 12px;
+        vertical-align: middle;
+    }
+    
+    .table-custom tbody tr:hover {
+        background: #222222;
+    }
+    
+    .table-custom .text-end {
+        text-align: right;
+    }
+    
+    .table-custom .text-center {
+        text-align: center;
+    }
+    
+    .text-decoration-none {
+        text-decoration: none !important;
+    }
+    
+    .text-decoration-none:hover {
+        text-decoration: underline !important;
+    }
+    
+    @media (max-width: 768px) {
+        .card-header-custom {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .table-custom {
+            font-size: 10px;
+        }
+        
+        .table-custom thead th,
+        .table-custom tbody td {
+            padding: 4px 6px;
+        }
+    }
